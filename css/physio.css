@@ -1,0 +1,25 @@
+body{
+    margin: 0px;
+    background-color: lightblue;
+    
+}
+form{
+    width: 70%;
+    margin: auto;
+    border:solid black 1px;
+    
+}
+input{
+     background:whitesmoke;
+		width:470px;
+		height:25px;
+	
+		margin:5px;
+		border:0px;
+		padding:5px;
+}
+.confirm{
+    text-align: center;
+    width: 80px;
+    background-color: white;
+}

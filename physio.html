@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Physiotherapy Clinic
+
+
+        </title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        
+        <link href="css/index.css" rel="stylesheet">
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+
+    <body>
+        <div id="wrap">
+            <div id="a">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/logo-1.png">
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                    <li><a href="#">Locations</a>
+                        <ul>
+                            <li><a href="chickballapura.html">Chikballapura</a></li>
+                            <li><a href="devanahalli.html">Devanahalli</a></li>
+                            <li><a href="yelahanka.html">Yelahanka</a></li>
+                            <li><a href="vidyaranyapura.html">Vidyaranyapura</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="#">My Profile</a>
+                        <ul>
+                            <li><a href="#">Edit Profile</a></li>
+                            <li><a href="#">Recent Appointments</a></li>
+                            <li><a href="home.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <h1>Physiotherapy Clinic</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <b>Address:</b>
+                        <br>
+                        <p>Radhakrishna Ortho care, KSRTC Depot Road, Chikkaballapura, Karnataka 562101</p>
+                        <b>Phone Number:</b>
+                        <p>081562 71222</p>
+                        <div class="panel panel-default">
+                            <div class="panel-heading"><b>Timings</b></div>
+                            <div class="panel-body">
+                                <ul class="list-group">
+
+                                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Monday:</strong></span>6pm to 8:30pm</li>
+
+                                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Tuesday: </strong></span>6pm to 8:30pm</li>
+                                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Wednesday </strong></span>6pm to 8:30pm</li>
+                                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Thursday: </strong></span>6pm to 8:30pm</li>
+                                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Friday: </strong></span>Closed</li>
+                                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Saturday: </strong></span>6pm to 8:30pm</li>
+                                    <li class="list-group-item text-right"><span class="pull-left"><strong class="">Sunday: </strong></span>Closed</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <button id="myBtn" name="Physiotherapy Clinic">Take Appointment</button>
+
+
+                        <div id="myModal" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Appointment Form</h2>
+                                <form action="appoint" method="post">
+                                    <p><label>Patient Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="pname" placeholder="Enter the Patient Name" required="">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" placeholder="Enter your email id " required=""></p>
+                                    <p><label>Age:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="age" placeholder="Enter your age " required="">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Appointment Date:</label>&nbsp;<input type="date" name="ad" required=""></p>
+                                    <p><label>Date of Birth:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="dob" required="">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Appointment Slot:</label>
+                                        &nbsp;<select name = "app">
+                                            <option value = "6pm - 6:30pm">6pm - 6:30pm</option>
+                                            <option value = "6:30pm - 7pm">6:30pm - 7pm</option>
+                                            <option value = "7pm - 7:30pm">7pm - 7:30pm</option>
+                                            <option value = "7:30pm - 8pm">7:30pm - 8pm</option>
+                                            <option value = "8pm - 8:30pm">8pm - 8:30pm</option>
+                                            
+                                        </select>
+
+                                    </p>
+                                    <p><label>Mobile Number:</label>&nbsp;<input type="text" name="phone" placeholder="Enter the Mobile Number " required="">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="hidden" name="hoss" value="" id="hos" ></p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Submit" class="confirm"/></p>
+                                </form>
+                            </div>
+
+                        </div>
+
+                        <button id="myBtn1">Upload Prescription</button>
+
+
+                        <div id="myModal1" class="modal1">
+
+                            <!-- Modal content -->
+                            <div class="modal-content1">
+                                <span class="close1">&times;</span>
+                                <h2>Prescription</h2>
+                                <form action="uploads" method="post" enctype="multipart/form-data">
+                                    
+                                    <p><label>Paitent Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="pname" placeholder="Enter name of patient" required=""/></p>
+                                    <p><label>Desease:</label><input type="text" name="des" placeholder="Enter desease"/><br/>
+                                        <input type="file" name="myimg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Submit" class="confirm"/></p>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3880.5964676775075!2d77.72788249986372!3d13.437286881103192!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb1ef6a4adea6b5%3A0xaaa77a5cbd5c5a8a!2sPhysiotherapy+Clinic+In+Chikkaballapura+Dr+SatheesH+physio!5e0!3m2!1sen!2sin!4v1539871364167"
+                                width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+
+    
+                </div>
+                <a href="display">view image</a>
+                <center><h2>Reviews</h2></center><hr width="50%"/>
+                <form action="review" method="post">
+                    <input type="text" name="name" placeholder="Enter your name "/>
+                    <br/>
+                    <br/>
+                    <input type="text" name="rev" placeholder="Give your review"/>
+                    <br/>
+                    <br/>
+                    <input type="submit" value="post review">
+                    
+                </form>
+                
+                <a href="viewr" >View Review</a>
+            </div>
+            <footer id="ft">
+            <img src="img/logo-1.png"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Aboutus.html">About Us</a>|
+            <a href="Contact Us.html">Contact Us</a>|
+            <a href="feedback.html">Feedback</a>
+            <div class="container-fluid">
+                <a href="home.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;copy(copyright)
+                    Health Care Companion</a>
+            </div>
+
+        </footer>
+
+
+        </div>
+
+
+
+        <script>
+            var modal = document.getElementById('myModal');
+
+            var btn = document.getElementById("myBtn");
+
+
+            var span = document.getElementsByClassName("close")[0];
+
+
+            btn.onclick = function () {
+                modal.style.display = "block";
+                var hos_name = document.getElementById("myBtn").name;
+                document.getElementById("hos").value = hos_name;
+
+            }
+
+
+            span.onclick = function () {
+                modal.style.display = "none";
+
+            }
+
+
+            window.onclick = function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+        <script>
+            var modal1 = document.getElementById('myModal1');
+
+            var btn = document.getElementById("myBtn1");
+
+
+            var span = document.getElementsByClassName("close1")[0];
+
+
+            btn.onclick = function () {
+                modal1.style.display = "block";
+
+
+            }
+
+
+            span.onclick = function () {
+                modal1.style.display = "none";
+
+            }
+
+
+            window.onclick = function (event) {
+                if (event.target === modal1) {
+                    modal1.style.display = "none";
+                }
+            }
+        </script>
+
+
+        
+    </body>
+
+</html>

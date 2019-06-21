@@ -1,0 +1,60 @@
+body
+{
+    margin: 0px;
+}
+
+.maindiv
+{
+    width: 80%;
+    height: 200px;
+    border: solid gray 1px;
+    margin: 0 auto;
+}
+
+.headdiv
+{
+    width: 100%;
+    height: 30px;
+    background-color: lightskyblue;
+}
+
+.headleft
+{
+    width: 30%;
+    height: 30px;
+    float: left;
+    
+}
+
+.headright
+{
+    width: 70%;
+    height: 30px;
+    text-align: right;
+    float: right;
+}
+
+
+.bodydiv
+{
+    width: 100%;
+    height: 170px;
+    
+}
+
+.bodyleft
+{
+    width: 20%;
+    height: 170px;
+    
+    float:left;
+}
+
+.bodyright
+{
+    width: 80%;
+    height: 170px;
+    
+    float: left;
+}
+
